@@ -1,4 +1,5 @@
 import React from 'react';
+import 'normalize.css';
 import './App.css';
 // import { Nav, Home, Contact, About } from './Components';
 import { Route } from 'react-router-dom';

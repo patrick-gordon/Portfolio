@@ -1,10 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
-import HOME_IMG from '../IMG/HOME_IMG.jpg'
 
 
 const Background = styled.div`
-    background-image: url(${HOME_IMG});
+    background-image: url();
     background-repeat: no-repeat;
     -webkit-background-size: cover;
   -moz-background-size: cover;
