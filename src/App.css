@@ -3,14 +3,7 @@
    License: none (public domain)
 */
 
-<<<<<<< HEAD
-=======
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
->>>>>>> 214fc78ebcbe74218d6b8d7150810371e4eb580b
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,20 +47,12 @@ q:before, q:after {
 }
 table {
 	border-collapse: collapse;
-<<<<<<< HEAD
-	border-spacing: 0;
-}
-
-
-a:link, a:visited{
-   color: #C4482E;
-=======
     border-spacing: 0;
 }
 a:link{
-	color:black;
+	color:white;
+	/* text-shadow: 2px 2px black; */
 }
 a:visited{
-	color: black;
->>>>>>> 214fc78ebcbe74218d6b8d7150810371e4eb580b
+	color: white;
 }
