@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from 'styled-components';
+import img from '../IMG/home4.jpg';
+
 
 
 const Background = styled.div`
-    background-image: url();
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    height: 700px;;
-    width: 1250px;
+    background-image: url(${img});
+    background-size: cover;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    width: auto;
+    height: 40rem;
 `;
 
 const Text = styled.div`
@@ -21,7 +21,7 @@ font-size: 2rem;
 export default function Home() {
     return (
         <Background>
-            <Text>Hello, I'm Patrick Gordon <br></br>and I am a full stack web developer.</Text>
+            <Text> </Text>
         </Background>
     )
 }
