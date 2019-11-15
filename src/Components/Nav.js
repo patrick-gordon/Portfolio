@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import {Nav, Navbar} from 'react-bootstrap';
+import { Nav, Navbar, ButtonToolbar, DropdownButton, Dropdown } from 'react-bootstrap';
 
 const Styles = styled.div`
 .navbar{
@@ -12,9 +12,16 @@ const Styles = styled.div`
 
 .navbar-brand{
     background-color: #ab694f;
+    font-size: 1.5rem;
+    color: white;
+    height: 2.3rem;
+    margin-left: 3rem;
+    width:2.3rem;
+    text-align: center;
 }
 
 .nav-item .nav-link{
+     margin-left: 7rem;
     color: white; 
 }
 `;
@@ -28,8 +35,8 @@ export default function NavigationBar() {
            <Navbar expands='lg'>
                <Navbar.Brand href='/'>PG</Navbar.Brand>
                <Navbar.Toggle aria-controls='basic-navbar-nav' />
-               <Navbar.Collapse id='basic-navbar-nav'>
-                    <Nav classname='ml-auto'>
+               <Navbar.Collapse className='justify-content-end'>
+                    <Nav className='ml-auto'>
                         <Nav.Item><Nav.Link href='/'>Home</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href='/about'>About</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href='/contact'>Contact</Nav.Link></Nav.Item>
