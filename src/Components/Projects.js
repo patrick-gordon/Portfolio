@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import { Card, Button, Container } from 'react-bootstrap'
 import styled from 'styled-components';
+import Axios from 'axios';
 
 const Style = styled.div`
     display: flex;
@@ -10,6 +11,22 @@ const Style = styled.div`
 `;
 
 export default function Projects() {
+    const [error, setError] = useState('');
+    const [load, setLoad] = useState(false);
+    const [project, setProject] = useState([])
+
+    useEffect(() => {
+        Axios
+            .get('https://api.github.com/repos/patrick-gordon/MERN-blog')
+            .then(res=> {
+                setProject(res.data)
+                setLoad(true)
+            })
+            .catch(err => {
+                setError(err.message);
+                setLoad(false)
+            })
+    })
     return (
         <div>
             <Container>
@@ -17,12 +34,12 @@ export default function Projects() {
                 <Card style={{ width: '18rem', margin:'2rem', height: '20rem', backgroundColor: '#7a7573' }}>
                 <Card.Img variant="top" src="holder.js/100px180" />
                 <Card.Body>
-                    <Card.Title>Project 1</Card.Title>
+                    <Card.Title>{project.name}</Card.Title>
                     <Card.Text>
                     Some quick example text to build on the card title and make up the bulk of
                     the card's content.
                     </Card.Text>
-                    <Button style={{margin:'60px', backgroundColor: '#ab694f', border: '1px solid white'}} variant="primary">Go somewhere</Button>
+                    <Button href='https://github.com/patrick-gordon/MERN-blog' style={{ backgroundColor: '#ab694f', border: '1px solid white' }} variant="primary">Github repo</Button>
                 </Card.Body>
                 </Card>
 
