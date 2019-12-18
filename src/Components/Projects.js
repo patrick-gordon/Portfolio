@@ -17,9 +17,10 @@ export default function Projects() {
 
     useEffect(() => {
         Axios
-            .get('https://api.github.com/repos/patrick-gordon/MERN-blog')
+            .get('https://api.github.com/users/patrick-gordon/repos')
             .then(res=> {
-                setProject(res.data)
+                console.log(res.data)
+                // setProject(res.data)
                 setLoad(true)
             })
             .catch(err => {
@@ -27,14 +28,16 @@ export default function Projects() {
                 setLoad(false)
             })
     })
-    return (
+
+    if(project.name === 'MERN-blog' || project.name === 'React-Instagram-App' || project.name === 'impact-dashboard') {
+        return(
         <div>
             <Container>
             <Style>
                 <Card style={{ width: '18rem', margin:'2rem', height: '20rem', backgroundColor: '#7a7573' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
+                <Card.Img variant="top" src="holder.js/100px180"></Card.Img>
                 <Card.Body>
-                    <Card.Title>{project.name}</Card.Title>
+                    <Card.Title>Project 1</Card.Title>
                     <Card.Text>
                     Some quick example text to build on the card title and make up the bulk of
                     the card's content.
@@ -70,4 +73,9 @@ export default function Projects() {
             </Container>
         </div>
     )
+} else {
+    return(
+        <div>Can not get Project</div>
+        )
+    }
 }
