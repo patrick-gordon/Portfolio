@@ -32,11 +32,11 @@ export default function Projects() {
                 if (repo.name.includes('portfolio')) {
                     return (
                         <div className='card-container'>                      
-                            <Card style={{ width: '28rem', height: '20rem', backgroundColor: '#7a7573', margin: '0 auto', padding: '0px' }}>
-                            <Card.Img variant="top" src="holder.js/100px180"></Card.Img>
+                            <Card style={{ width: '30rem', height: '20rem', backgroundColor: '#7a7573', margin: '0 auto', padding: '0px' }}>
+                            {/* <Card.Img variant="top" src="holder.js/100px180"></Card.Img> */}
                             <Card.Body style={{padding: '0px'}}>
                                 <Card.Title style={{color: 'white', fontSize: '2rem'}}>{repo.name}</Card.Title>
-                                <Card.Text  style={{color: 'white', fontSize: '1.5rem', lineHeight: '1.8rem', marginTop: '2.5rem'}}>
+                                <Card.Text  style={{color: 'white', fontSize: '1.5rem', lineHeight: '1.8rem', marginTop: '2rem'}}>
                                 {repo.description}
                                 </Card.Text>
                                 <Button href={`http://www.github.com/patrick-gordon/${repo.name}`} style={{position: 'absolute', bottom: '0', backgroundColor: '#ab694f', border: '1px solid white' }} variant="primary">Github repo</Button>
