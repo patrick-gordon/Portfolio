@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { Nav, Navbar, ButtonToolbar, DropdownButton, Dropdown } from 'react-bootstrap';
+import '../Components/nav.css'
 
 const Styles = styled.div`
 .navbar{
@@ -31,6 +32,7 @@ const Styles = styled.div`
 
 export default function NavigationBar() {
     return (
+        <div className='nav-wrapper'>
        <Styles>
            <Navbar expands='lg'>
                <Navbar.Brand href='/'>PG</Navbar.Brand>
@@ -45,5 +47,6 @@ export default function NavigationBar() {
                 </Navbar.Collapse>
            </Navbar>
        </Styles>
+       </div>
     )
 }
