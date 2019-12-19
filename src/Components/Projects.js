@@ -39,7 +39,7 @@ export default function Projects() {
                                 <Card.Text  style={{color: 'white', fontSize: '1.5rem', lineHeight: '1.5rem', marginTop: '2rem'}}>
                                 {repo.description}
                                 </Card.Text>
-                                <Button href={`http://www.github.com/patrick-gordon/${repo.name}`} style={{position: 'absolute', bottom: '0', backgroundColor: '#ab694f', border: '1px solid white' }} variant="primary">Github repo</Button>
+                                <Button href={`http://www.github.com/patrick-gordon/${repo.name}`} style={{marginLeft: '9rem', marginBottom: '1.5rem', position: 'absolute', bottom: '0', backgroundColor: '#ab694f', border: '1px solid white' }} variant="primary">Github repo</Button>
                             </Card.Body>
                             </Card>
                         </div>  
