@@ -15,14 +15,14 @@ const Styles = styled.div`
     background-color: #ab694f;
     font-size: 1.5rem;
     color: white;
-    height: 2.3rem;
+    height: 2.5rem;
     margin-left: 3rem;
-    width:2.3rem;
+    width:2.7rem;
     text-align: center;
 }
 
 .nav-item .nav-link{
-     margin-left: 7rem;
+    margin-left: 7rem;
     color: white; 
 }
 `;
