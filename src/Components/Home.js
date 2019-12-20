@@ -13,15 +13,10 @@ const Background = styled.div`
     height: 40rem;
 `;
 
-const Text = styled.div`
-color: white;
-font-size: 2rem;
-`;
-
 export default function Home() {
     return (
         <Background>
-            <Text> </Text>
+          
         </Background>
     )
 }
