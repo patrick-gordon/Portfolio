@@ -27,7 +27,7 @@ const Styles = styled.div`
     margin-left: 5rem;
     color: white; 
     width: 100%;
-
+    
     @media(max-width: 700px) {
         margin-left: 0;
     }
@@ -44,14 +44,14 @@ export default function NavigationBar() {
            <Navbar expands='lg'>
                {/* <Navbar.Brand href='/'>PG</Navbar.Brand> */}
                <Navbar.Toggle aria-controls='basic-navbar-nav' />
-               {/* <Navbar.Collapse className='justify-content-end'> */}
-                    <Nav className='ml-auto'>
+               <Navbar.Collapse>
+                    <Nav className='d-flex justify-content-end'>
                         <Nav.Item><Nav.Link href='/'>HOME</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href='/about'>ABOUT</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href='/contact'>CONTACT</Nav.Link></Nav.Item>
+                        {/* <Nav.Item><Nav.Link href='/contact'>CONTACT</Nav.Link></Nav.Item> */}
                         <Nav.Item><Nav.Link href='/projects'>PROJECTS</Nav.Link></Nav.Item>
                     </Nav>
-                {/* </Navbar.Collapse> */}
+                </Navbar.Collapse>
            </Navbar>
        </Styles>
        </div>

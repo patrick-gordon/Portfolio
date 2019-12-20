@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-bootstrap';
 import './App.css';
 import { Route } from 'react-router-dom';
 import Home from './Components/Home';
@@ -15,7 +15,7 @@ function App() {
       <NavigationBar />
       <Route exact path='/' component={Home}></Route>
       <Route path='/about' component={About}></Route>
-      <Route path='/contact' component={Contact}></Route>
+      {/* <Route path='/contact' component={Contact}></Route> */}
       <Route path='/projects' component={Projects}></Route>
    </>
   );
