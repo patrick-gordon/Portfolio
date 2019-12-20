@@ -1,3 +1,4 @@
+/* Animations */
 .nav-wrapper{
     animation-duration: 2s;
     animation-name: slidein;
@@ -15,3 +16,20 @@
     }
 }
 
+
+/* media queries */
+
+@media(max-width: 700px) {
+    .navbar-expand{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-item .nav-link {
+        margin-left: 0;
+    }
+}
+
+@media(max-width: 700px) {
+    
+}

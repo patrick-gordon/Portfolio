@@ -1,12 +1,6 @@
 body{
     background-image: url(../IMG/HOME.jpg);
     background-size: cover;
-    background-position: center ;
-    
+    background-position: center ;  
 }
 
-.container-background{
-    width: 40rem;
-    background-color: #7a7573;
-    height: 100vh;
-}

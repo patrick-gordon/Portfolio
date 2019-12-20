@@ -24,6 +24,10 @@ const Styles = styled.div`
 .nav-item .nav-link{
     margin-left: 7rem;
     color: white; 
+
+    @media(max-width: 700px) {
+        margin-left: 0;
+    }
 }
 `;
 

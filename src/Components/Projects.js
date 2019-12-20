@@ -26,20 +26,21 @@ export default function Projects() {
         },[])
         
         return (
-            <>
+        <Container>
+        <div className='project-container'>
             {/* <h1> HI {console.log('[checking projects]', projects)} </h1> */}
             {projects.map(repo => {
                 if (repo.name.includes('Portfolio')) {
                     return (
                         <div className='card-container'>                      
-                            <Card style={{ width: '34rem', height: '20rem', backgroundColor: '#7a7573', margin: '0 auto', padding: '0px' }}>
+                            <Card className='card'>
                             {/* <Card.Img variant="top" src="holder.js/100px180"></Card.Img> */}
                             <Card.Body>
-                                <Card.Title style={{color: 'white', fontSize: '2.2rem'}}>{repo.name}</Card.Title>
-                                <Card.Text  style={{color: 'white', fontSize: '1.5rem', lineHeight: '1.5rem', marginTop: '2rem'}}>
-                                {repo.description}
+                                <Card.Title className='card-title'>{repo.name}</Card.Title>
+                                <Card.Text className='card-text'>
+                                    {repo.description}
                                 </Card.Text>
-                                <Button href={`http://www.github.com/patrick-gordon/${repo.name}`} style={{marginLeft: '9rem', marginBottom: '1.5rem', position: 'absolute', bottom: '0', backgroundColor: '#ab694f', border: '1px solid white' }} variant="primary">Github repo</Button>
+                                <Button className='card-button' href={`http://www.github.com/patrick-gordon/${repo.name}`} variant="primary">Github repo</Button>
                             </Card.Body>
                             </Card>
                         </div>  
@@ -48,7 +49,8 @@ export default function Projects() {
                 console.log('MERN not found');
                 }
             })}
-            </>  
+        </div>  
+        </Container>
         );
     }
 
