@@ -1,63 +1,60 @@
-import React from 'react'
-import {Card, Button} from 'react-bootstrap'
-import img from '../IMG/home4.jpg';
-import styled from 'styled-components'
+import React, {useEffect, useState} from 'react'
+import { Card, Button, Container } from 'react-bootstrap'
 
-const Background = styled.div`
-    background-image: url(${img});
-    background-size: cover;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    width: auto;
-    height: 40rem;
-`;
+import Axios from 'axios';
+import '../Components/projects.css'
 
-const Wrapper = styled.div`
-display: flex;
-justify-content: space-between;
 
-`
 
 export default function Projects() {
-    return (
-        <Background>
-        <Wrapper>
-            <Card style={{ width: '20rem', height: '20rem'  }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
+    const [error, setError] = useState('');
+    const [load, setLoad] = useState(false);
+    const [projects, setProjects] = useState([])
 
-            <Card style={{ width: '20rem'  }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
+    useEffect(() => {
+        Axios
+            .get('https://api.github.com/users/patrick-gordon/repos?sort=updated') //can change this into project GET or some other, more effiecent way
+            .then(res=> {
+                console.log(res.data)
+                setProjects(res.data)
+                setLoad(true)
+            })
+            .catch(err => {
+                setError(err.message);
+                setLoad(false)
+            })
+        },[])
+        
+        return (
+        <Container>
+        <div className='project-container'>
+            {/* <h1> HI {console.log('[checking projects]', projects)} </h1> */}
+            {projects.map(repo => {
+                if (repo.name.includes('Portfolio')) {
+                    return (
+                        <div className='card-container'>                      
+                            <Card className='card'>
+                            {/* <Card.Img variant="top" src="holder.js/100px180"></Card.Img> */}
+                            <Card.Body>
+                                <Card.Title className='card-title'>{repo.name}</Card.Title>
+                                <Card.Text className='card-text'>
+                                    {repo.description}
+                                </Card.Text>
+                                <Button className='card-button' href={`http://www.github.com/patrick-gordon/${repo.name}`} variant="primary">Github repo</Button>
+                            </Card.Body>
+                            </Card>
+                        </div>  
+                    );
+                } else {
+                console.log('MERN not found');
+                }
+            })}
+        </div>  
+        </Container>
+        );
+    }
 
-            <Card style={{ width: '20rem'  }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of
-                        the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-        </Wrapper>
-        </Background>
-    )
-}
+
+
+
+

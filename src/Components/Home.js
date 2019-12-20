@@ -1,22 +1,27 @@
 import React from 'react'
+import '../Components/Home.css'
+import {Container} from 'react-bootstrap';
 import styled from 'styled-components';
-import img from '../IMG/home4.jpg';
-
 
 
 const Background = styled.div`
-    background-image: url(${img});
-    background-size: cover;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    width: auto;
-    height: 40rem;
+margin-top: 5rem;
+width: 100%;
+background-color: #7a7573;
+height: 100vh;
+border: 2px solid white;
+opacity: 0.95;
 `;
+
+
+
 
 export default function Home() {
     return (
-        <Background>
-          
-        </Background>
+        <Container>
+           <Background>
+
+           </Background>
+        </Container>
     )
 }
