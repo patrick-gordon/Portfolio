@@ -1,6 +1,22 @@
 body{
-    background-image: url(../IMG/HOME.jpg);
-    background-size: cover;
-    background-position: center ;  
+    background-image: url(../IMG/homee.jpeg);
+    background-size: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+.background{
+    margin-top: 3rem;
+    width: 100%;
+    /* background-color: #7a7573; */
+    height: 100vh;
+    /* border: 2px solid white; */
+    opacity: 0.95;
 }
 
+.background h2{
+    font-size: 5rem;
+    font-weight: bolder
+}

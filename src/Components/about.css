@@ -1,0 +1,33 @@
+.container h2{
+    
+    font-size: 5rem;
+    font-weight: bolder
+}
+
+.container p {
+}
+
+
+
+
+
+.about-container{
+    background-color: #6a5049;
+    height: 100vh;
+    border: 2px solid white;
+    opacity: 0.8;
+    margin-left: 0.9rem;
+    display: flex;
+    margin-top: 1rem;
+    color:white;
+}
+.about-container p {
+    border:1px solid black;
+    width: 65%;
+    padding: 3%;
+}
+
+.about-container img {
+    border:1px solid black;
+    width:35%;
+}
