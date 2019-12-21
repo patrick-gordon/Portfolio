@@ -1,12 +1,12 @@
 .container h2{
     font-size: 5rem;
     font-weight: bolder;
-    
 }
 
 .container p {
-    
+    margin-left: 5px;
 }
+
 
 .about-container{
     background-color: #6a5049;
@@ -19,8 +19,8 @@
     color:white;
 }
 
+
 .about-container p {
-    border:1px solid black;
     width: 65%;
     padding: 3%;
     font-size: 2rem;
@@ -30,6 +30,6 @@
 }
 
 .about-container img {
-    border:1px solid black;
     width:35%;
+    align-content: center;
 }

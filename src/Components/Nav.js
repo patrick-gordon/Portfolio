@@ -41,7 +41,7 @@ export default function NavigationBar() {
     return (
         <div className='nav-wrapper'>
        <Styles>
-           <Navbar expands='lg'>
+           <Navbar expand='md'>
                {/* <Navbar.Brand href='/'>PG</Navbar.Brand> */}
                <Navbar.Toggle aria-controls='basic-navbar-nav' />
                <Navbar.Collapse>

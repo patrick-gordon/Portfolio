@@ -1,6 +1,6 @@
 /* Animations */
 .nav-wrapper{
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-name: slidein;
 }
 
@@ -25,9 +25,12 @@
         margin: 0;
         padding: 0;
     }
+    .nav-item{
+        margin-top:0;
+    }
     .nav-item .nav-link {
         margin-left: 0;
-        
+        display: flex;
     }
 }
 
