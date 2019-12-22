@@ -30,7 +30,7 @@ export default function Projects() {
         <div className='project-container'>
             {/* <h1> HI {console.log('[checking projects]', projects)} </h1> */}
             {projects.map(repo => {
-                if (repo.name.includes('Portfolio')) {
+                if (repo.name.includes('Sample')) {
                     return (
                         <div className='card-container'>                      
                             <Card className='card'>
