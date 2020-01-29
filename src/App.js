@@ -11,13 +11,21 @@ import NavigationBar from './Components/Nav';
 
 function App() {
   return (
-    <>
+    <div className='overall'>
       <NavigationBar />
-      <Route exact path='/' component={Home}></Route>
-      <Route path='/about' component={About}></Route>
-      {/* <Route path='/contact' component={Contact}></Route> */}
-      <Route path='/projects' component={Projects}></Route>
-   </>
+      <Route exact path='/'>
+        <Home />
+      </Route>
+      <Route path='/about'>
+        <About/>
+      </Route>
+      {/* <Route path='/contact'>
+       <Contact/>
+       </Route> */}
+      <Route path='/projects'>
+        <Projects />
+      </Route>
+   </div>
   );
 }
 

@@ -1,4 +1,4 @@
-body{
+/* body{
     background-image: url(../IMG/homee.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,11 +10,11 @@ body{
 .background{
     margin-top: 3rem;
     width: 100%;
-    /* background-color: #7a7573; */
+    /* background-color: #7a7573; 
     height: 100vh;
-    /* border: 2px solid white; */
+     border: 2px solid white; 
     opacity: 0.95;
-}
+} */
 .background h2{
     font-size: 5rem;
     font-weight: bolder;
