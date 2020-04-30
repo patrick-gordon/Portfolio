@@ -1,7 +1,13 @@
-import React from 'react'
-import styled from 'styled-components';
-import { Nav, Navbar, ButtonToolbar, DropdownButton, Dropdown } from 'react-bootstrap';
-import '../Components/nav.css'
+import React from "react";
+import styled from "styled-components";
+import {
+  Nav,
+  Navbar,
+  ButtonToolbar,
+  DropdownButton,
+  Dropdown,
+} from "react-bootstrap";
+import "../Components/nav.css";
 
 const Styles = styled.div`
 .navbar{
@@ -34,26 +40,29 @@ const Styles = styled.div`
 }
 `;
 
-
-
-
 export default function NavigationBar() {
-    return (
-        <div className='nav-wrapper'>
-       <Styles>
-           <Navbar expand='md'>
-               {/* <Navbar.Brand href='/'>PG</Navbar.Brand> */}
-               <Navbar.Toggle aria-controls='basic-navbar-nav' />
-               <Navbar.Collapse>
-                    <Nav className='d-flex justify-content-end'>
-                        <Nav.Item><Nav.Link href='/'>HOME</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href='/about'>ABOUT</Nav.Link></Nav.Item>
-                        {/* <Nav.Item><Nav.Link href='/contact'>CONTACT</Nav.Link></Nav.Item> */}
-                        <Nav.Item><Nav.Link href='/projects'>PROJECTS</Nav.Link></Nav.Item>
-                    </Nav>
-                </Navbar.Collapse>
-           </Navbar>
-       </Styles>
-       </div>
-    )
+  return (
+    <div className="nav-wrapper">
+      <Styles>
+        <Navbar expand="md">
+          {/* <Navbar.Brand href='/'>PG</Navbar.Brand> */}
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse>
+            <Nav className="d-flex justify-content-end">
+              <Nav.Item>
+                <Nav.Link href="/">HOME</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="/about">ABOUT</Nav.Link>
+              </Nav.Item>
+              {/* <Nav.Item><Nav.Link href='/contact'>CONTACT</Nav.Link></Nav.Item> */}
+              <Nav.Item>
+                <Nav.Link href="/projects">PROJECTS</Nav.Link>
+              </Nav.Item>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </Styles>
+    </div>
+  );
 }
