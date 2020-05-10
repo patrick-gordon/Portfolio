@@ -37,10 +37,10 @@ export default function About() {
       >
         <Card.Text style={{ lineHeight: "1.9rem", fontSize: "2rem" }}>
           I’m originally from Beaumont, Texas, but I spent five years in
-          Colorado studying political science at CU Boulder. My
-          husky-mix and I have been in Austin, Texas for almost two years, where
-          we love to hike, try new restaurants with friends, and attend concerts
-          (in the Live Music Capital of the World.)
+          Colorado studying political science at CU Boulder. My husky-mix and I
+          have been in Austin, Texas for almost two years, where we love to
+          hike, try new restaurants with friends, and attend concerts (in the
+          Live Music Capital of the World.)
         </Card.Text>
       </Card>
       <Card

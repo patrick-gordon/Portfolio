@@ -6,8 +6,13 @@ import {
   ButtonToolbar,
   DropdownButton,
   Dropdown,
+  NavItem,
 } from "react-bootstrap";
 import "../Components/nav.css";
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 
 const Styles = styled.div`
 .navbar{
@@ -17,17 +22,10 @@ const Styles = styled.div`
     font-size: 1.5rem;
     opacity: 0.6;
     width: 100%;
-}
+    display: flex;
+    justify-content: space-between;
 
-// .navbar-brand{
-//     // background-color: #ab694f;
-//     font-size: 1.5rem;
-//     color: white;
-//     height: 2.5rem;
-//     margin-left: 0rem;
-//     width:2.7rem;
-//     text-align: center;
-// }
+}
 
 .nav-item .nav-link{
     margin-left: 5rem;
@@ -42,10 +40,10 @@ const Styles = styled.div`
 
 export default function NavigationBar() {
   return (
-    <div className="nav-wrapper">
       <Styles>
         <Navbar expand="md">
           {/* <Navbar.Brand href='/'>PG</Navbar.Brand> */}
+          <div className='link'>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse>
             <Nav className="d-flex justify-content-end">
@@ -61,8 +59,14 @@ export default function NavigationBar() {
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
+            </div>
+              <div className='icons' style={{marginRight: '10rem'}}>
+              
+              <FontAwesomeIcon icon={faGithub} size='2x' style={{marginRight: '3rem'}} />
+              <FontAwesomeIcon icon={faLinkedin} size='2x' style={{marginRight: '3rem'}} />
+
+              </div>
         </Navbar>
       </Styles>
-    </div>
   );
 }

@@ -27,7 +27,13 @@ export default function Projects() {
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           {/* <h1> HI {console.log('[checking projects]', projects)} </h1> */}
           {projects.map((repo) => {
-            if (repo.name.includes("Instagram") || (repo.name.includes("MERN")) || (repo.name.includes("Simpson-Says")) ) {
+            if (
+              repo.name.includes('Impact') ||
+              repo.name.includes("Instagram") ||
+              repo.name.includes("MERN") ||
+              repo.name.includes("Simpson-Says") ||
+              repo.name.includes("Client") 
+            ) {
               return (
                 <div>
                   <Card
@@ -35,18 +41,22 @@ export default function Projects() {
                       backgroundColor: "#6a5049",
                       opacity: "0.8",
                       border: "2px solid white",
-                      width: '28rem',
+                      width: "28rem",
                       margin: "20px",
-                      height: '20rem'
+                      height: "23rem",
                     }}
                   >
                     {/* <Card.Img variant="top" src="holder.js/100px180"></Card.Img> */}
-                    <Card.Body style={{color: "white"}}>
-                      <Card.Title style={{fontSize: '30px'}}>{repo.name}</Card.Title>
-                      <Card.Text style={{fontSize: '23px'}}>{repo.description}</Card.Text>
+                    <Card.Body style={{ color: "white" }}>
+                      <Card.Title style={{ fontSize: "30px" }}>
+                        {repo.name}
+                      </Card.Title>
+                      <Card.Text style={{ fontSize: "23px" }}>
+                        {repo.description}
+                      </Card.Text>
                       <Button
                         style={{
-                          marginTop: '20px',
+                          marginTop: "20px",
                           backgroundColor: "#ab694f",
                           border: "1px solid white",
                           opacity: "1",
@@ -56,6 +66,7 @@ export default function Projects() {
                       >
                         Github repo
                       </Button>
+                      <Card.Text style={{marginTop: '10px'}}>Deployed link:<a>{repo.homepage}</a> </Card.Text>
                     </Card.Body>
                   </Card>
                 </div>

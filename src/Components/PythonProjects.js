@@ -27,8 +27,10 @@ export default function Projects() {
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           {/* <h1> HI {console.log('[checking projects]', projects)} </h1> */}
           {projects.map((repo) => {
-            if (repo.name.includes("Django")) {
-              return (
+            if (repo.name.includes("Django")) {  
+
+
+		return (
                 <div>
                   <Card
                     style={{
