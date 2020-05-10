@@ -62,8 +62,9 @@ export default function NavigationBar() {
             </div>
               <div className='icons' style={{marginRight: '10rem'}}>
               
-              <FontAwesomeIcon icon={faGithub} size='2x' style={{marginRight: '3rem'}} />
-              <FontAwesomeIcon icon={faLinkedin} size='2x' style={{marginRight: '3rem'}} />
+              <a href='github.com/patrick-gordon'><FontAwesomeIcon icon={faGithub} size='2x' style={{marginRight: '3rem'}}  /> </a>
+              
+              <a href='https://www.linkedin.com/in/patrick-g-169010b2/'><FontAwesomeIcon icon={faLinkedin} size='2x' style={{marginRight: '3rem', color: 'white'}} /> </a>
 
               </div>
         </Navbar>
