@@ -28,9 +28,10 @@ export default function Projects() {
           {/* <h1> HI {console.log('[checking projects]', projects)} </h1> */}
           {projects.map((repo) => {
             if (
+              repo.name.includes('patChat') ||
               repo.name.includes('Impact') ||
               repo.name.includes("Instagram") ||
-              repo.name.includes("MERN") ||
+              // repo.name.includes("MERN") ||
               repo.name.includes("Simpson-Says") ||
               repo.name.includes("Client") 
             ) {
