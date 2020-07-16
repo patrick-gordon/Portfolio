@@ -38,7 +38,7 @@ export default function Projects() {
                       opacity: "0.8",
                       border: "2px solid white",
                       width: "28rem",
-                      margin: "20px",
+                      margin: "2rem",
                       height: '20rem'
                     }}
                   >
@@ -48,7 +48,7 @@ export default function Projects() {
                       <Card.Text style={{fontSize: '23px'}}>{repo.description}</Card.Text>
                       <Button
                         style={{
-                          marginTop: '20px',
+                          marginTop: '2rem',
                           backgroundColor: "#ab694f",
                           border: "1px solid white",
                           opacity: "1",

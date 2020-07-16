@@ -12,18 +12,18 @@ function App() {
   return (
     <div className="overall">
       <NavigationBar />
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/about">
-        <About />
-      </Route>
+      <Route exact path="/" component={Home} />
+        
+      
+      <Route path="/about" component={About} />
+       
+     
       {/* <Route path='/contact'>
        <Contact/>
        </Route> */}
-      <Route path="/projects">
-        <Projects />
-      </Route>
+      <Route path="/projects" component={Projects} />
+        
+      
     </div>
   );
 }

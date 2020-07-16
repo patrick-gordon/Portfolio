@@ -10,7 +10,7 @@ import JavaScriptProjects from "./JavaScriptProjects";
 export default function Projects() {
   return (
     <div>
-      <Container style={{ marginTop: "20px" }}>
+      <Container style={{ marginTop: "2rem" }}>
         <Tabs defaultActiveKey="JavaScript" style={{ fontSize: "20px" }}>
           '
           <Tab eventKey="JavaScript" title="JavaScript">

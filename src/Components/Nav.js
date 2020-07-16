@@ -9,10 +9,9 @@ import {
   NavItem,
 } from "react-bootstrap";
 import "../Components/nav.css";
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./nav.css";
 
 const Styles = styled.div`
 .navbar{
@@ -25,6 +24,11 @@ const Styles = styled.div`
     display: flex;
     justify-content: space-between;
 
+   @media (max-width: 700px){
+     height: 11.5rem;
+      display: flex;
+   }
+
 }
 
 .nav-item .nav-link{
@@ -36,38 +40,72 @@ const Styles = styled.div`
         margin-left: 0;
     }
 }
+
+// @media (max-width: 700px){
+
+//   .nav-item .nav-link {
+//     margin-top: 1.3rem;
+//   }
+//   .links-icons-container{
+//     display: flex;
+//     border: 1px solid black
+//     text-align: center
+//   }
+//   .icons{
+//     margin-right: 0rem;
+//     margin-left: 2rem
+//     // border: 1px solid black
+//   }
+//   .icons a{
+//     border: 1px solid black
+//     marginTop: 0px;
+//   }
+// }
+
 `;
 
 export default function NavigationBar() {
   return (
-      <Styles>
-        <Navbar expand="md">
-          {/* <Navbar.Brand href='/'>PG</Navbar.Brand> */}
-          <div className='link'>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse>
-            <Nav className="d-flex justify-content-end">
-              <Nav.Item>
-                <Nav.Link href="/">HOME</Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="/about">ABOUT</Nav.Link>
-              </Nav.Item>
-              {/* <Nav.Item><Nav.Link href='/contact'>CONTACT</Nav.Link></Nav.Item> */}
-              <Nav.Item>
-                <Nav.Link href="/projects">PROJECTS</Nav.Link>
-              </Nav.Item>
-            </Nav>
-          </Navbar.Collapse>
-            </div>
-              <div className='icons' style={{marginRight: '10rem'}}>
-              
-              <a href='github.com/patrick-gordon'><FontAwesomeIcon icon={faGithub} size='2x' style={{marginRight: '3rem'}}  /> </a>
-              
-              <a href='https://www.linkedin.com/in/patrick-g-169010b2/'><FontAwesomeIcon icon={faLinkedin} size='2x' style={{marginRight: '3rem', color: 'white'}} /> </a>
+    <Styles>
+      <Navbar expand="md">
+        {/* <Navbar.Brand href='/'>PG</Navbar.Brand> */}
 
-              </div>
-        </Navbar>
-      </Styles>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          {/* <div className='links-icons-container'> */}
+        <Navbar.Collapse>
+          <Nav className="d-flex justify-content-end">
+            <Nav.Item>
+              <Nav.Link href="/">HOME</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link href="/about">ABOUT</Nav.Link>
+            </Nav.Item>
+            {/* <Nav.Item><Nav.Link href='/contact'>CONTACT</Nav.Link></Nav.Item> */}
+            <Nav.Item>
+              <Nav.Link href="/projects">PROJECTS</Nav.Link>
+            </Nav.Item>
+          </Nav>
+        </Navbar.Collapse>
+
+        <div className="icons" style={{}}>
+          <a href="github.com/patrick-gordon">
+            <FontAwesomeIcon
+              icon={faGithub}
+              size="2x"
+              style={{ marginRight: "3rem" }}
+            />{" "}
+          </a>
+
+          <a href="https://www.linkedin.com/in/patrick-g-169010b2/" style={{ color: 'white', marginTop: '10px'}}>
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              size="2x"
+              // style={{ marginRight: "3rem", color: "white" }}
+            />{" "}
+          </a>
+        </div>
+        {/* </div> */}
+      </Navbar>
+    </Styles>
   );
 }

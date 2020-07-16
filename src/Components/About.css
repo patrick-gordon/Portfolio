@@ -1,0 +1,51 @@
+
+@media (max-width: 2000px){
+.about-card-1 {
+    background-color: #6a5049;
+    opacity: 0.8;
+    margin: 1rem;
+    border: 2px solid white;
+    color: white;
+    margin-right: 49%;
+}
+
+.about-card-2 {
+    background-color: #6a5049;
+    opacity: 0.8;
+    margin: 1rem;
+    border: 2px solid white;
+    color: white;
+    margin-left: 49%;
+}
+
+.about-card-3 {
+    background-color: #6a5049;
+    opacity: 0.8;
+    margin: 1rem;
+    border: 2px solid white;
+    color: white;
+    margin-right: 49%;
+}
+}
+
+
+
+
+
+ @media (max-width: 700px) {
+    .about-card-1 {
+        margin-right: 0;
+        margin-top: 3rem;
+        background-color: black;
+        margin-left: 0;
+
+    }
+    .about-card-2 {
+        margin-left: 0;
+    }
+    .about-card-3 {
+        margin-right: 0;
+        margin-left: 0;
+
+    }
+} 

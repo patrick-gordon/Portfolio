@@ -66,12 +66,10 @@ a:visited{
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    overflow: scroll;
-    width: 100%;
+    
+   
 }
 .background{
     margin-top: 3rem;
-    /* background-color: #7a7573;  */
-    /* border: 2px solid white;  */
     opacity: 0.95;
 }

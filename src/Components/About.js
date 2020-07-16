@@ -1,21 +1,12 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import './About.css'
 
 export default function About() {
   return (
     <>
-      <Card
-        style={{
-          backgroundColor: "#6a5049",
-          opacity: "0.8",
-          margin: "10px",
-          border: "2px solid white",
-          width: "45%",
-          height: "16rem",
-          color: "white",
-        }}
-      >
-        <Card.Text style={{ lineHeight: "1.9rem", fontSize: "2rem" }}>
+      <Card className='about-card-1'>
+        <Card.Text  >
           My name is Patrick Gordon, and I’m a 24-year-old Lambda School student
           pursuing a career in Full Stack web development. While working on my
           coursework as a student, I have been working as a Team Lead for Lambda
@@ -24,18 +15,17 @@ export default function About() {
         </Card.Text>
       </Card>
       <Card
-        style={{
-          backgroundColor: "#6a5049",
-          opacity: "0.8",
-          margin: "10px",
-          border: "2px solid white",
-          width: "45%",
-          height: "16rem",
-          marginLeft: "50%",
-          color: "white",
-        }}
+        // style={{
+        //   backgroundColor: "#6a5049",
+        //   opacity: "0.8",
+        //   margin: "10px",
+        //   border: "2px solid white",
+        //   marginLeft: "50%",
+        //   color: "white",
+        // }}
+        className='about-card-2'
       >
-        <Card.Text style={{ lineHeight: "1.9rem", fontSize: "2rem" }}>
+        <Card.Text >
           I’m originally from Beaumont, Texas, but I spent five years in
           Colorado studying political science at CU Boulder. My husky-mix and I
           have been in Austin, Texas for almost two years, where we love to
@@ -44,17 +34,17 @@ export default function About() {
         </Card.Text>
       </Card>
       <Card
-        style={{
-          backgroundColor: "#6a5049",
-          opacity: "0.8",
-          margin: "10px",
-          border: "2px solid white",
-          width: "45%",
-          height: "16rem",
-          color: "white",
-        }}
+        // style={{
+        //   backgroundColor: "#6a5049",
+        //   opacity: "0.8",
+        //   margin: "10px",
+        //   border: "2px solid white",
+        //   color: "white",
+        //   marginRight: "50%",
+        // }}
+        className='about-card-3'
       >
-        <Card.Text style={{ lineHeight: "1.9rem", fontSize: "2rem" }}>
+        <Card.Text >
           I began to code after I moved back to Texas, and I quickly realized
           it’s the field for me. I have experience with React, Java, Node, HTML,
           CSS, MongoDB, AWS, and Redux. Through coding, I’m able to showcase my
