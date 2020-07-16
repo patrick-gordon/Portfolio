@@ -61,14 +61,16 @@ a:visited{
 	color: black;
 }
 .overall{
-    background-image: url(./IMG/homee.jpeg);
+    background: url(./IMG/homee.jpeg) no-repeat center center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    min-height: 100vh;
     
    
 }
+
+
 .background{
     margin-top: 3rem;
     opacity: 0.95;
