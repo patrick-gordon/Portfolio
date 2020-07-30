@@ -1,21 +1,28 @@
 
-.background h2{
+.home-content h2{
     font-size: 5rem;
     font-weight: bolder;
     
 }
 
-.background p {
+.home-content p {
     margin-left: 20rem;
+    font-size: 2rem;
 }
 
 
 
-.background p{
+.home-content p{
     margin-left: .5rem;
 }
 
-/* media queries */
+.home-icons{
+    margin-left: 2rem; 
+    position: fixed;
+    bottom: 0;
+}
+
+
 @media(max-width: 700px) {
     .background h2 {
         font-size: 3rem;

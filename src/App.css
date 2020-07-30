@@ -55,7 +55,7 @@ table {
 }
 a:link{
 	color:white;
-	/* text-shadow: 2px 2px black; */
+	
 }
 a:visited{
 	color: black;
@@ -63,11 +63,17 @@ a:visited{
 .overall{
     background: url(./IMG/homee.jpeg) no-repeat center center fixed;
     background-size: cover;
-    /* background-repeat: no-repeat;
-    background-position: center; */
     min-height: 100vh;
     
    
+}
+
+@media(max-width: 700px){
+    .overall{
+    background: url(./IMG/homee.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    }
 }
 
 

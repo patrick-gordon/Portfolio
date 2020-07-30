@@ -25,7 +25,6 @@ export default function Projects() {
     <>
       <Container>
         <div style={{ display: "flex", flexWrap: "wrap" }}>
-          {/* <h1> HI {console.log('[checking projects]', projects)} </h1> */}
           {projects.map((repo) => {
             if (repo.name.includes("Django")) {  
 
@@ -42,7 +41,6 @@ export default function Projects() {
                       height: '20rem'
                     }}
                   >
-                    {/* <Card.Img variant="top" src="holder.js/100px180"></Card.Img> */}
                     <Card.Body style={{color: "white"}}>
                       <Card.Title  style={{fontSize: '30px'}}>{repo.name}</Card.Title>
                       <Card.Text style={{fontSize: '23px'}}>{repo.description}</Card.Text>

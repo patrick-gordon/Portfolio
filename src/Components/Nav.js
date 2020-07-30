@@ -25,7 +25,6 @@ const Styles = styled.div`
     justify-content: space-between;
 
    @media (max-width: 700px){
-     height: 11.5rem;
       display: flex;
    }
 
@@ -40,28 +39,6 @@ const Styles = styled.div`
         margin-left: 0;
     }
 }
-
-// @media (max-width: 700px){
-
-//   .nav-item .nav-link {
-//     margin-top: 1.3rem;
-//   }
-//   .links-icons-container{
-//     display: flex;
-//     border: 1px solid black
-//     text-align: center
-//   }
-//   .icons{
-//     margin-right: 0rem;
-//     margin-left: 2rem
-//     // border: 1px solid black
-//   }
-//   .icons a{
-//     border: 1px solid black
-//     marginTop: 0px;
-//   }
-// }
-
 `;
 
 export default function NavigationBar() {
@@ -88,21 +65,20 @@ export default function NavigationBar() {
         </Navbar.Collapse>
 
         <div className="icons" style={{}}>
-          <a href="github.com/patrick-gordon">
+          <span href="github.com/patrick-gordon">
             <FontAwesomeIcon
               icon={faGithub}
               size="2x"
-              style={{ marginRight: "3rem" }}
+              style={{ marginRight: "3rem",  color: 'white' }}
             />{" "}
-          </a>
+          </span>
 
-          <a href="https://www.linkedin.com/in/patrick-g-169010b2/" style={{ color: 'white', marginTop: '10px'}}>
+          <span href="https://www.linkedin.com/in/patrick-g-169010b2/" style={{ color: 'white', marginTop: '10px'}}>
             <FontAwesomeIcon
               icon={faLinkedin}
               size="2x"
-              // style={{ marginRight: "3rem", color: "white" }}
             />{" "}
-          </a>
+          </span>
         </div>
         {/* </div> */}
       </Navbar>

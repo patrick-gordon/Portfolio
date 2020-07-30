@@ -43,11 +43,10 @@ export default function Projects() {
                       opacity: "0.8",
                       border: "2px solid white",
                       width: "28rem",
-                      margin: "20px",
-                      height: "23rem",
+                      margin: "2rem",
+                      
                     }}
                   >
-                    {/* <Card.Img variant="top" src="holder.js/100px180"></Card.Img> */}
                     <Card.Body style={{ color: "white" }}>
                       <Card.Title style={{ fontSize: "30px" }}>
                         {repo.name}
@@ -73,7 +72,7 @@ export default function Projects() {
                 </div>
               );
             } else {
-              console.log("MERN not found");
+              console.log(" repo not found");
             }
           })}
         </div>

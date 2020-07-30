@@ -1,51 +1,22 @@
+/* if staggered boxes need to have different class names on each, if not 3 staggered boxes can use one class */
 
-@media (max-width: 2000px){
-.about-card-1 {
+.about-card {
     background-color: #6a5049;
     opacity: 0.8;
     margin: 1rem;
     border: 2px solid white;
     color: white;
-    margin-right: 49%;
-}
-
-.about-card-2 {
-    background-color: #6a5049;
-    opacity: 0.8;
-    margin: 1rem;
-    border: 2px solid white;
-    color: white;
-    margin-left: 49%;
-}
-
-.about-card-3 {
-    background-color: #6a5049;
-    opacity: 0.8;
-    margin: 1rem;
-    border: 2px solid white;
-    color: white;
-    margin-right: 49%;
-}
+    line-height: 1.5rem;
+    text-align: center;
+  
+    
 }
 
 
-
-
-
- @media (max-width: 700px) {
-    .about-card-1 {
+@media (max-width: 700px) {
+    .about-card {
         margin-right: 0;
         margin-top: 3rem;
         background-color: black;
-        margin-left: 0;
-
-    }
-    .about-card-2 {
-        margin-left: 0;
-    }
-    .about-card-3 {
-        margin-right: 0;
-        margin-left: 0;
-
     }
 } 

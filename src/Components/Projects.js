@@ -12,7 +12,6 @@ export default function Projects() {
     <div>
       <Container style={{ marginTop: "2rem" }}>
         <Tabs defaultActiveKey="JavaScript" style={{ fontSize: "20px" }}>
-          '
           <Tab eventKey="JavaScript" title="JavaScript">
             <JavaScriptProjects />
           </Tab>
