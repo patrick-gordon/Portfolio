@@ -17,17 +17,23 @@
 }
 
 .home-icons{
-    margin-left: 2rem; 
     position: fixed;
     bottom: 0;
+    border: 5px solid black;
 }
 
 
-@media(max-width: 700px) {
+
+
+
+@media(max-width: 750px) {
     .background h2 {
         font-size: 3rem;
     }
     .background p {
         font-size: 2rem;
+    }
+    .home-icons {
+        margin-left: 0rem;
     }
 }

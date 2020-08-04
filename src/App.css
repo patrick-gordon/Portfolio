@@ -68,16 +68,16 @@ a:visited{
    
 }
 
-@media(max-width: 700px){
+ @media(max-width: 700px){
     .overall{
     background: url(./IMG/homee.jpeg) no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
     }
-}
+} 
 
 
 .background{
     margin-top: 3rem;
     opacity: 0.95;
-}
+} 

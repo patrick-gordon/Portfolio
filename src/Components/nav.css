@@ -19,22 +19,4 @@
 
 /* media queries */
 
-@media(max-width: 700px) {
-    .navbar-expand{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        height: 9rem;
-    }
-    .nav-item{
-        margin-top:0;
-    }
-    .nav-item .nav-link {
-        margin-left: 0;
-        display: flex;
-    }
-}
 
-@media(max-width: 700px) {
-    
-}

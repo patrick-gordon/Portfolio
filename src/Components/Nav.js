@@ -23,12 +23,20 @@ const Styles = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
-
-   @media (max-width: 700px){
-      display: flex;
-   }
-
 }
+
+.navigation{
+  display: flex
+  
+  @media(max-width: 700px){
+    .navigation{
+      display: flex
+    }
+  }
+}
+
+
+
 
 .nav-item .nav-link{
     margin-left: 5rem;
@@ -36,7 +44,8 @@ const Styles = styled.div`
     width: 100%;
     
     @media(max-width: 700px) {
-        margin-left: 0;
+      margin-left: 0;
+      
     }
 }
 `;
@@ -45,35 +54,32 @@ export default function NavigationBar() {
   return (
     <Styles>
       <Navbar expand="md">
-        {/* <Navbar.Brand href='/'>PG</Navbar.Brand> */}
-
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
           {/* <div className='links-icons-container'> */}
-        <Navbar.Collapse>
-          <Nav className="d-flex justify-content-end">
+        {/* <Navbar.Collapse> */}
+          <div className='navigation'>
             <Nav.Item>
               <Nav.Link href="/">HOME</Nav.Link>
             </Nav.Item>
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link href="/about">ABOUT</Nav.Link>
-            </Nav.Item>
-            {/* <Nav.Item><Nav.Link href='/contact'>CONTACT</Nav.Link></Nav.Item> */}
+            </Nav.Item> */}
             <Nav.Item>
               <Nav.Link href="/projects">PROJECTS</Nav.Link>
             </Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
+          </div>
+        {/* </Navbar.Collapse> */}
 
-        <div className="icons" style={{}}>
+        <div className="icons">
           <span href="github.com/patrick-gordon">
             <FontAwesomeIcon
               icon={faGithub}
               size="2x"
-              style={{ marginRight: "3rem",  color: 'white' }}
+              style={{color: 'white' }}
             />{" "}
           </span>
 
-          <span href="https://www.linkedin.com/in/patrick-g-169010b2/" style={{ color: 'white', marginTop: '10px'}}>
+          <span href="https://www.linkedin.com/in/patrick-g-169010b2/" style={{ color: 'white'}}>
             <FontAwesomeIcon
               icon={faLinkedin}
               size="2x"
