@@ -55,19 +55,19 @@ export default function NavigationBar() {
     <Styles>
       <Navbar expand="md">
         {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
-          {/* <div className='links-icons-container'> */}
+        {/* <div className='links-icons-container'> */}
         {/* <Navbar.Collapse> */}
-          <div className='navigation'>
-            <Nav.Item>
-              <Nav.Link href="/">HOME</Nav.Link>
-            </Nav.Item>
-            {/* <Nav.Item>
+        <div className="navigation">
+          <Nav.Item>
+            <Nav.Link href="/">HOME</Nav.Link>
+          </Nav.Item>
+          {/* <Nav.Item>
               <Nav.Link href="/about">ABOUT</Nav.Link>
             </Nav.Item> */}
-            <Nav.Item>
-              <Nav.Link href="/projects">PROJECTS</Nav.Link>
-            </Nav.Item>
-          </div>
+          <Nav.Item>
+            <Nav.Link href="/projects">PROJECTS</Nav.Link>
+          </Nav.Item>
+        </div>
         {/* </Navbar.Collapse> */}
 
         <div className="icons">
@@ -75,15 +75,15 @@ export default function NavigationBar() {
             <FontAwesomeIcon
               icon={faGithub}
               size="2x"
-              style={{color: 'white' }}
+              style={{ color: "white" }}
             />{" "}
           </span>
 
-          <span href="https://www.linkedin.com/in/patrick-g-169010b2/" style={{ color: 'white'}}>
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size="2x"
-            />{" "}
+          <span
+            href="https://www.linkedin.com/in/patrick-g-169010b2/"
+            style={{ color: "white" }}
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />{" "}
           </span>
         </div>
         {/* </div> */}

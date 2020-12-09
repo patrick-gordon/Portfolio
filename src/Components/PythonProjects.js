@@ -26,10 +26,8 @@ export default function Projects() {
       <Container>
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           {projects.map((repo) => {
-            if (repo.name.includes("Django")) {  
-
-
-		return (
+            if (repo.name.includes("Django")) {
+              return (
                 <div>
                   <Card
                     style={{
@@ -38,15 +36,19 @@ export default function Projects() {
                       border: "2px solid white",
                       width: "28rem",
                       margin: "2rem",
-                      height: '20rem'
+                      height: "20rem",
                     }}
                   >
-                    <Card.Body style={{color: "white"}}>
-                      <Card.Title  style={{fontSize: '30px'}}>{repo.name}</Card.Title>
-                      <Card.Text style={{fontSize: '23px'}}>{repo.description}</Card.Text>
+                    <Card.Body style={{ color: "white" }}>
+                      <Card.Title style={{ fontSize: "30px" }}>
+                        {repo.name}
+                      </Card.Title>
+                      <Card.Text style={{ fontSize: "23px" }}>
+                        {repo.description}
+                      </Card.Text>
                       <Button
                         style={{
-                          marginTop: '2rem',
+                          marginTop: "2rem",
                           backgroundColor: "#ab694f",
                           border: "1px solid white",
                           opacity: "1",

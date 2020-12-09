@@ -23,16 +23,35 @@ export default function Home() {
       </Container>
 
       <div className="home-icons">
-        <FontAwesomeIcon style={{ color: "white"}} icon={faHtml5} size="4x" />
-        
-        <FontAwesomeIcon style={{ color: "white"}} icon={faCss3} size="4x" />
-        
-        <FontAwesomeIcon style={{ color: "white"}} icon={faReact} size="4x" />
-        
-        <FontAwesomeIcon style={{ color: "white"}} icon={faNode} size="4x" />
-       
-        <FontAwesomeIcon style={{ color: "white"}} icon={faPython} size="4x" />
-        
+        <FontAwesomeIcon
+          style={{ color: "white", marginLeft: "5rem" }}
+          icon={faHtml5}
+          size="4x"
+        />
+
+        <FontAwesomeIcon
+          style={{ color: "white", marginLeft: "5rem" }}
+          icon={faCss3}
+          size="4x"
+        />
+
+        <FontAwesomeIcon
+          style={{ color: "white", marginLeft: "5rem" }}
+          icon={faReact}
+          size="4x"
+        />
+
+        <FontAwesomeIcon
+          style={{ color: "white", marginLeft: "5rem" }}
+          icon={faNode}
+          size="4x"
+        />
+
+        <FontAwesomeIcon
+          style={{ color: "white", marginLeft: "5rem" }}
+          icon={faPython}
+          size="4x"
+        />
       </div>
     </>
   );
