@@ -2,6 +2,7 @@
 .home-content h2{
     font-size: 5rem;
     font-weight: bolder;
+    margin-top: 2rem;
     
 }
 
@@ -14,12 +15,14 @@
 
 .home-content p{
     margin-left: .5rem;
+    
 }
 
 .home-icons{
     position: fixed;
     bottom: 0;
-    border: 5px solid black;
+    /* border: 5px solid black; */
+    margin-right: 5rem;
 }
 
 

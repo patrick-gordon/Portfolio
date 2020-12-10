@@ -54,9 +54,6 @@ export default function NavigationBar() {
   return (
     <Styles>
       <Navbar expand="md">
-        {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
-        {/* <div className='links-icons-container'> */}
-        {/* <Navbar.Collapse> */}
         <div className="navigation">
           <Nav.Item>
             <Nav.Link href="/">HOME</Nav.Link>
@@ -68,25 +65,25 @@ export default function NavigationBar() {
             <Nav.Link href="/projects">PROJECTS</Nav.Link>
           </Nav.Item>
         </div>
-        {/* </Navbar.Collapse> */}
+     
 
         <div className="icons">
-          <span href="github.com/patrick-gordon">
+          <a href='https://github.com/patrick-gordon' style={{color: 'white'}}>
             <FontAwesomeIcon
               icon={faGithub}
               size="2x"
-              style={{ color: "white" }}
-            />{" "}
-          </span>
+              style={{ color: "white", marginRight: '3rem' }}
+            />
+          </a>
 
-          <span
+          <a
             href="https://www.linkedin.com/in/patrick-g-169010b2/"
             style={{ color: "white" }}
           >
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />{" "}
-          </span>
+            <FontAwesomeIcon icon={faLinkedin} size="2x"  style={{ marginRight: '2rem'}}/>
+          </a>
         </div>
-        {/* </div> */}
+      
       </Navbar>
     </Styles>
   );
