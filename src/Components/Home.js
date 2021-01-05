@@ -14,7 +14,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Home() {
   return (
     <>
-        
       <Container>
         <div className="home-content">
           <h2>PATRICK F. GORDON</h2>
@@ -24,46 +23,45 @@ export default function Home() {
         </div>
       </Container>
 
-
-        <Container>
+    <Container >
       <div className="home-icons">
         <FontAwesomeIcon
-          style={{ color: "white", marginLeft: "5rem" }}
+          style={{ color: "white", marginRight: '2rem'}}
           icon={faHtml5}
-          size="5x"
+          size="7x"
         />
 
         <FontAwesomeIcon
-          style={{ color: "white", marginLeft: "5rem" }}
+          style={{ color: "white",  marginRight: '2rem'  }}
           icon={faCss3}
-          size="5x"
+          size="7x"
         />
 
         <FontAwesomeIcon
-          style={{ color: "white", marginLeft: "5rem" }}
+          style={{ color: "white",  marginRight: '2rem' }}
           icon={faJs}
-          size="5x"
+          size="7x"
         />
 
         <FontAwesomeIcon
-          style={{ color: "white", marginLeft: "5rem" }}
+          style={{ color: "white",  marginRight: '2rem' }}
           icon={faReact}
-          size="5x"
+          size="7x"
         />
 
         <FontAwesomeIcon
-          style={{ color: "white", marginLeft: "5rem" }}
+          style={{ color: "white",   marginRight: '2rem' }}
           icon={faNode}
-          size="5x"
+          size="7x"
         />
 
         <FontAwesomeIcon
-          style={{ color: "white", marginLeft: "5rem" }}
+          style={{ color: "white", marginRight: '2rem'  }}
           icon={faPython}
-          size="5x"
+          size="7x"
         />
       </div>
-        </Container>
+      </Container>
     </>
   );
 }

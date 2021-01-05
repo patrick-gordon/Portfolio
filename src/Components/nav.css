@@ -1,22 +1,57 @@
+.navbar {
+  text-decoration: none;
+  background-color: #3a3a43;
+  height: 5rem;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .navigation {
+    display: flex;
+    /* background-color: aqua; */
+  }
+}
+
+.nav-item .nav-link {
+  margin-left: 5rem;
+  color: white;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .nav-item .nav-link {
+    margin-left: 0;
+  }
+}
+
 /* Animations */
-.nav-wrapper{
-    animation-duration: 1.5s;
-    animation-name: slidein;
+.nav-wrapper {
+  animation-duration: 1.5s;
+  animation-name: slidein;
 }
 
 @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
 
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
-
 
 /* media queries */
 
-
+.icons {
+  display: flex;
+}

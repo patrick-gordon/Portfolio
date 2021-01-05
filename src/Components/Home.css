@@ -7,7 +7,6 @@
 }
 
 .home-content p {
-    margin-left: 20rem;
     font-size: 2rem;
 }
 
@@ -15,15 +14,20 @@
 
 .home-content p{
     margin-left: .5rem;
-    
 }
 
-.home-icons{
+.home-icons {
     position: fixed;
     bottom: 0;
-    /* border: 5px solid black; */
-    margin-right: 5rem;
+    border: 5px solid black;    
 }
+
+
+ @media(max-width: 800px){
+    .home-icons > * {
+       margin-right: 0;
+    }
+} 
 
 
 

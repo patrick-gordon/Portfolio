@@ -26,7 +26,7 @@ export default function Projects() {
       <Container>
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           {projects.map((repo) => {
-            if (repo.name.includes("Django")) {
+            if (repo.name.includes("")) {
               return (
                 <div>
                   <Card

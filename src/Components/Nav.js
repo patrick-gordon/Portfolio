@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import {
   Nav,
   Navbar,
@@ -13,46 +12,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./nav.css";
 
-const Styles = styled.div`
-.navbar{
-    text-decoration: none;
-    background-color: #3a3a43
-    height: 5rem;
-    font-size: 1.5rem;
-    opacity: 0.6;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navigation{
-  display: flex
-  
-  @media(max-width: 700px){
-    .navigation{
-      display: flex
-    }
-  }
-}
-
-
-
-
-.nav-item .nav-link{
-    margin-left: 5rem;
-    color: white; 
-    width: 100%;
-    
-    @media(max-width: 700px) {
-      margin-left: 0;
-      
-    }
-}
-`;
-
 export default function NavigationBar() {
   return (
-    <Styles>
       <Navbar expand="md">
         <div className="navigation">
           <Nav.Item>
@@ -85,6 +46,5 @@ export default function NavigationBar() {
         </div>
       
       </Navbar>
-    </Styles>
   );
 }
