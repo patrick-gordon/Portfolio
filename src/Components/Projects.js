@@ -16,7 +16,7 @@ export default function Projects() {
             <JavaScriptProjects />
           </Tab>
           <Tab eventKey="Python" title="Python">
-            <PythonProjects />
+            {/* <PythonProjects /> */}
           </Tab>
         </Tabs>
       </Container>
