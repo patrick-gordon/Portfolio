@@ -66,9 +66,19 @@ export default function Projects() {
                       >
                         Github repo
                       </Button>
-                      <Card.Text style={{ marginTop: "10px" }}>
-                        Deployed link:<a>{repo.homepage}</a>{" "}
-                      </Card.Text>
+                      <Button style={{
+                         marginTop: "20px",
+                         backgroundColor: "#ab694f",
+                         border: "1px solid white",
+                         opacity: "1",
+                         color: 'white'
+                       }}
+                       href={repo.homepage}
+                       variant="primary"
+                       >
+                         Deployed Site
+                        {/* Deployed site:<a>{repo.homepage}</a>{" "} */}
+                      </Button>
                     </Card.Body>
                   </Card>
                 </div>
